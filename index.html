@@ -2,76 +2,112 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Livros Recomendados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poder da Manipulação</title>
   <style>
     body {
+      background-color: #1e1e1e;
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      padding: 20px;
-    }
-
-    h1 {
+      color: white;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      color: #333;
     }
-
-    .livro {
+    header {
+      background-image: url('https://link-da-sua-imagem.com/imagem.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('https://link-da-sua-foto.com/perfil.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .content {
+      padding-top: 80px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .book {
       display: flex;
       align-items: center;
-      margin-bottom: 20px;
-      background-color: white;
-      border-radius: 10px;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: black;
+      border-radius: 8px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: left;
     }
-
-    .livro img {
-      width: 100px;
-      height: auto;
-      margin-right: 15px;
-      border-radius: 5px;
+    .book img {
+      width: 80px;
+      height: 100px;
+      object-fit: cover;
+      flex-shrink: 0;
     }
-
-    .livro button {
-      background-color: #007BFF;
+    .book a {
       color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
+      text-decoration: none;
+      padding: 15px;
+      font-weight: bold;
+      display: block;
+      width: 100%;
+      transition: 0.3s;
     }
-
-    .livro button:hover {
-      background-color: #0056b3;
+    .book:hover {
+      background-color: #333;
     }
   </style>
 </head>
 <body>
-  <h1>Livros de Poder e Persuasão</h1>
 
-  <div class="livro">
-    <img src="48leisdopoder.jpg" alt="48 Leis do Poder">
-    <button onclick="window.open('https://seulink.com/48leis')">As 48 Leis do Poder</button>
+  <header>
+    <div class="profile-pic"></div>
+  </header>
+
+  <div class="content">
+    <h2>Poder da Manipulação</h2>
+    <p>Transforme os outros em bonecos. Comece agora.</p>
+
+    <div class="book">
+      <img src="as-48-leis-do-poder.jpg" alt="48 Leis do Poder">
+      <a href="https://seulink.com/48-leis-do-poder.pdf" target="_blank">AS 48 LEIS DO PODER</a>
+    </div>
+
+    <div class="book">
+      <img src="mais-esperto-que-o-diabo.jpg" alt="Mais Esperto que o Diabo">
+      <a href="https://seulink.com/mais-esperto-diabo.pdf" target="_blank">MAIS ESPERTO QUE O DIABO</a>
+    </div>
+
+    <div class="book">
+      <img src="como-convencer-alguem-em-90-segundos.jpg" alt="Como Convencer em 90 Segundos">
+      <a href="https://seulink.com/convencer-90-segundos.pdf" target="_blank">COMO CONVENCER ALGUÉM EM 90 SEGUNDOS</a>
+    </div>
+
+    <div class="book">
+      <img src="manual-fbi.jpg" alt="Manual FBI">
+      <a href="https://seulink.com/manual-fbi.pdf" target="_blank">MANUAL DE PERSUASÃO DO FBI</a>
+    </div>
+
+    <div class="book">
+      <img src="o-principe.jpg" alt="O Príncipe">
+      <a href="https://seulink.com/o-principe.pdf" target="_blank">O PRÍNCIPE</a>
+    </div>
+
+    <div class="book">
+      <img src="combo-1297.jpg" alt="Combo">
+      <a href="https://seulink.com/combo-1297.pdf" target="_blank">COMBO - 1297 LIVROS + 100 AUDIOBOOKS</a>
+    </div>
+
   </div>
 
-  <div class="livro">
-    <img src="mais-esperto-que-o-diabo.jpg" alt="Mais Esperto que o Diabo">
-    <button onclick="window.open('https://seulink.com/diabo')">Mais Esperto que o Diabo</button>
-  </div>
-
-  <div class="livro">
-    <img src="como-convencer-em-90s.jpg" alt="Como Convencer em 90 Segundos">
-    <button onclick="window.open('https://seulink.com/90segundos')">Como Convencer em 90 Segundos</button>
-  </div>
-
-  <div class="livro">
-    <img src="manual-fbi.jpg" alt="Manual de Persuasão do FBI">
-    <button onclick="window.open('https://seulink.com/fbi')">Manual de Persuasão do FBI</button>
-  </div>
-
-  <div class="livro">
-    <img src="o-principe.jpg" alt="O Príncipe">
-    <button onclick="window.open('https://seulink.com/principe')">O Príncipe</button>
-  </div>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Poder da Manipulação</title>
   <style>
     body {
@@ -62,33 +62,6 @@
       vertical-align: middle;
       border-radius: 4px;
     }
-
-    .quiz {
-      margin-bottom: 30px;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border-radius: 8px;
-    }
-
-    .quiz button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      background-color: #000;
-      color: white;
-      cursor: pointer;
-    }
-
-    .quiz button:hover {
-      background-color: #333;
-    }
-
-    .quiz-result {
-      margin-top: 15px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
@@ -98,14 +71,6 @@
   </header>
 
   <div class="content">
-
-    <div class="quiz">
-      <h3>Você acha que consegue influenciar as pessoas facilmente?</h3>
-      <button onclick="showResult('sim')">Sim</button>
-      <button onclick="showResult('nao')">Não</button>
-      <div class="quiz-result" id="quiz-result"></div>
-    </div>
-
     <h2>Poder da Manipulação</h2>
     <p>Compre agora e pare de ser <span style="color: red;">medíocre</span>.</p>
 
@@ -132,19 +97,7 @@
     <a class="link-button" href="https://seulink.com/combo-1297.pdf" target="_blank">
       <img src="combo.png">COMBO - 1297 LIVROS + 100 AUDIOBOOKS
     </a>
-
   </div>
-
-  <script>
-    function showResult(resposta) {
-      const resultado = document.getElementById('quiz-result');
-      if (resposta === 'sim') {
-        resultado.innerText = 'Ótimo! Esses livros vão turbinar ainda mais seu poder de influência.';
-      } else {
-        resultado.innerText = 'Então você precisa urgentemente aprender! Comece com os livros abaixo.';
-      }
-    }
-  </script>
 
 </body>
 </html>

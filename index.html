@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Poder da Manipulação</title>
   <style>
     body {
-      background-color: #1e1e1e;
+      background-color: #121212;
       font-family: Arial, sans-serif;
       color: white;
       margin: 0;
       padding: 0;
       text-align: center;
     }
-    header {
-      background-image: url('https://link-da-sua-imagem.com/imagem.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 200px; /* Altura reduzida */
+
+    .curved-header {
       position: relative;
+      background: url('URL-DA-SUA-IMAGEM-DE-FUNDO.jpg') no-repeat center center;
+      background-size: cover;
+      height: 200px;
+      border-bottom-left-radius: 50% 20%;
+      border-bottom-right-radius: 50% 20%;
     }
+
     .profile-pic {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       border: 4px solid white;
+      background-image: url('perfil.png');
+      background-size: cover;
+      background-position: center;
       position: absolute;
       bottom: -60px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url('perfil.png');
-      background-size: cover;
-      background-position: center;
     }
+
     .content {
-      padding-top: 40px; /* Reduzido para compensar a altura do header */
+      padding-top: 100px;
       max-width: 600px;
       margin: auto;
     }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
     .book {
       display: flex;
       align-items: center;
       background-color: black;
-      border-radius: 8px;
+      border-radius: 10px;
       margin: 10px 0;
       overflow: hidden;
       text-align: left;
     }
+
     .book img {
       width: 80px;
       height: 100px;
       object-fit: cover;
       flex-shrink: 0;
     }
+
     .book a {
       color: white;
       text-decoration: none;
@@ -60,8 +76,8 @@
       font-weight: bold;
       display: block;
       width: 100%;
-      transition: 0.3s;
     }
+
     .book:hover {
       background-color: #333;
     }
@@ -69,9 +85,9 @@
 </head>
 <body>
 
-  <header>
+  <div class="curved-header">
     <div class="profile-pic"></div>
-  </header>
+  </div>
 
   <div class="content">
     <h2>Poder da Manipulação</h2>
@@ -79,29 +95,30 @@
 
     <div class="book">
       <img src="as-48-leis-do-poder.jpg" alt="48 Leis do Poder">
-      <a href="https://seulink.com/48-leis-do-poder.pdf" target="_blank">AS 48 LEIS DO PODER</a>
+      <a href="#">AS 48 LEIS DO PODER</a>
     </div>
 
     <div class="book">
       <img src="mais-esperto-que-o-diabo.jpg" alt="Mais Esperto que o Diabo">
-      <a href="https://seulink.com/mais-esperto-diabo.pdf" target="_blank">MAIS ESPERTO QUE O DIABO</a>
+      <a href="#">MAIS ESPERTO QUE O DIABO</a>
     </div>
 
     <div class="book">
       <img src="como-convencer-alguem-em-90-segundos.jpg" alt="Como Convencer em 90 Segundos">
-      <a href="https://seulink.com/convencer-90-segundos.pdf" target="_blank">COMO CONVENCER ALGUÉM EM 90 SEGUNDOS</a>
+      <a href="#">COMO CONVENCER ALGUÉM EM 90 SEGUNDOS</a>
     </div>
 
     <div class="book">
       <img src="manual-fbi.jpg" alt="Manual FBI">
-      <a href="https://seulink.com/manual-fbi.pdf" target="_blank">MANUAL DE PERSUASÃO DO FBI</a>
+      <a href="#">MANUAL DE PERSUASÃO DO FBI</a>
     </div>
 
     <div class="book">
       <img src="o-principe.jpg" alt="O Príncipe">
-      <a href="https://seulink.com/o-principe.pdf" target="_blank">O PRÍNCIPE</a>
+      <a href="#">O PRÍNCIPE</a>
     </div>
 
   </div>
+
 </body>
 </html>

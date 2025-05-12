@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Poder da Manipulação</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
     }
 
     header {
-      background-image: url('https://link-da-sua-imagem.com/imagem.jpg');
+      background-image: url('sua-imagem-de-fundo.jpg'); /* Troque para URL real */
       background-size: cover;
       background-position: center;
       height: 300px;
@@ -29,7 +31,7 @@
       bottom: -60px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url('perfil.png');
+      background-image: url('perfil.png'); /* Substitua por caminho correto */
       background-size: cover;
       background-position: center;
     }
@@ -50,6 +52,7 @@
       border-radius: 8px;
       font-weight: bold;
       transition: 0.3s;
+      border: 1px solid white;
     }
 
     .link-button:hover {
@@ -62,42 +65,48 @@
       vertical-align: middle;
       border-radius: 4px;
     }
+
+    h2 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    p span {
+      color: red;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <div class="profile-pic"></div>
   </header>
 
   <div class="content">
     <h2>Poder da Manipulação</h2>
-    <p>Compre agora e pare de ser <span style="color: red;">medíocre</span>.</p>
+    <p>Compre agora e pare de ser <span>medíocre</span>.</p>
 
     <a class="link-button" href="https://seulink.com/48-leis-do-poder.pdf" target="_blank">
-      <img src="48-leis-poder.png">AS 48 LEIS DO PODER
+      <img src="48-leis-poder.png" alt="Capa 48 leis do poder" /> AS 48 LEIS DO PODER
     </a>
 
     <a class="link-button" href="https://seulink.com/mais-esperto-diabo.pdf" target="_blank">
-      <img src="mais-esperto-diabo.png">MAIS ESPERTO QUE O DIABO
+      <img src="mais-esperto-diabo.png" alt="Capa Mais esperto que o diabo" /> MAIS ESPERTO QUE O DIABO
     </a>
 
     <a class="link-button" href="https://seulink.com/arte-seducao.pdf" target="_blank">
-      <img src="arte-seducao.png">A ARTE DA SEDUÇÃO
+      <img src="arte-seducao.png" alt="Capa Arte da Sedução" /> A ARTE DA SEDUÇÃO
     </a>
 
     <a class="link-button" href="https://seulink.com/manual-fbi.pdf" target="_blank">
-      <img src="manual-fbi.png">MANUAL DE PERSUASÃO DO FBI
+      <img src="manual-fbi.png" alt="Capa Manual FBI" /> MANUAL DE PERSUASÃO DO FBI
     </a>
 
     <a class="link-button" href="https://seulink.com/lei-atracao.pdf" target="_blank">
-      <img src="lei-atracao.png">LEI DA ATRAÇÃO – O SEGREDO
-    </a>
-
-    <a class="link-button" href="https://seulink.com/combo-1297.pdf" target="_blank">
-      <img src="combo.png">COMBO - 1297 LIVROS + 100 AUDIOBOOKS
+      <img src="lei-atracao.png" alt="Capa Lei da Atração" /> LEI DA ATRAÇÃO – O SEGREDO
     </a>
   </div>
-
 </body>
 </html>
